@@ -25,7 +25,7 @@ this project uses [twine](https://twinery.org/), something that makes creating a
 
 you can see the current twison data in the `twison.json` file
 
-![twine-screenshot.png](Screenshot of the story in Twine)
+![Screenshot of the story in Twine](twine-screenshot.png)
 
 ## example
 
