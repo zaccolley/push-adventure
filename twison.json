@@ -20,7 +20,7 @@
       ]
     },
     {
-      "text": "What happened mate?\n\n[[I’m just waiting for a mate.->ash2]]\n[[lol->ash2-1]]",
+      "text": "What happened mate?\n\n[[I’m just waiting for a mate.->ash2]]\n[[I wondering the same mate.->ash2-1]]",
       "links": [
         {
           "name": "I’m just waiting for a mate.",
@@ -28,9 +28,9 @@
           "pid": "3"
         },
         {
-          "name": "lol",
+          "name": "I wondering the same mate.",
           "link": "ash2-1",
-          "pid": "13"
+          "pid": "17"
         }
       ],
       "name": "ash1",
@@ -44,12 +44,17 @@
       ]
     },
     {
-      "text": "Is that why your cars all smashed up and you’re up on the grass at the moment or what?\n\n[[Yeah… just waiting for a mate he’s gone in… in there. Why?->ash3]]",
+      "text": "Is that why your cars all smashed up and you’re up on the grass at the moment or what?\n\n[[Yeah… just waiting for a mate he’s gone in… in there. Why?->ash3]]\n[[Uhh?->ash3-1]]",
       "links": [
         {
           "name": "Yeah… just waiting for a mate he’s gone in… in there. Why?",
           "link": "ash3",
           "pid": "4"
+        },
+        {
+          "name": "Uhh?",
+          "link": "ash3-1",
+          "pid": "13"
         }
       ],
       "name": "ash2",
@@ -63,8 +68,13 @@
       ]
     },
     {
-      "text": "I’m just wondering hh-h-how the collision with the car happened mate?\n\n[[What collision?->ash4]]",
+      "text": "I’m just wondering hh-h-how the collision with the car happened mate?\n\n[[A wasp flew right in m'face and I span out mate.->gameover1]]\n[[What collision?->ash4]]",
       "links": [
+        {
+          "name": "A wasp flew right in m'face and I span out mate.",
+          "link": "gameover1",
+          "pid": "18"
+        },
         {
           "name": "What collision?",
           "link": "ash4",
@@ -101,12 +111,17 @@
       ]
     },
     {
-      "text": "Who’s your mate?\n\n[[James, he’s in there.->ash6]]\n",
+      "text": "Who’s your mate?\n\n[[James, he’s in there.->ash6]]\n[[Martin, he’s went to find some food->ash6-1]]\n",
       "links": [
         {
           "name": "James, he’s in there.",
           "link": "ash6",
           "pid": "7"
+        },
+        {
+          "name": "Martin, he’s went to find some food",
+          "link": "ash6-1",
+          "pid": "14"
         }
       ],
       "name": "ash5",
@@ -139,12 +154,17 @@
       ]
     },
     {
-      "text": "It kinda does mate cause you’ve just been involved in an accident.\n\n[[No I havent!->ash8]]\n",
+      "text": "It kinda does mate cause you’ve just been involved in an accident.\n\n[[No I havent!->ash8]]\n[[I'll be honest, I have but it's me birthday.->win]]",
       "links": [
         {
           "name": "No I havent!",
           "link": "ash8",
           "pid": "9"
+        },
+        {
+          "name": "I'll be honest, I have but it's me birthday.",
+          "link": "win",
+          "pid": "19"
         }
       ],
       "name": "ash7",
@@ -158,12 +178,19 @@
       ]
     },
     {
-      "text": "Double-click this passage to edit it.",
+      "text": "Lying to an officer of the law is a criminal offense...\n\n[[gameover1]]",
+      "links": [
+        {
+          "name": "gameover1",
+          "link": "gameover1",
+          "pid": "18"
+        }
+      ],
       "name": "ash8",
       "pid": "9",
       "position": {
-        "x": "178.5",
-        "y": "606.5"
+        "x": "1253.5",
+        "y": "506.5"
       },
       "tags": [
         "imageAsh2"
@@ -227,20 +254,136 @@
       ]
     },
     {
-      "text": "cool\n\n[[waht->ash3]]",
+      "text": "Your mate the one driving?\n\n[[...I'm just waiting for him.->ash3]]",
       "links": [
         {
-          "name": "waht",
+          "name": "...I'm just waiting for him.",
           "link": "ash3",
           "pid": "4"
         }
       ],
-      "name": "ash2-1",
+      "name": "ash3-1",
       "pid": "13",
       "position": {
-        "x": "335.5",
-        "y": "416.5"
+        "x": "417.5",
+        "y": "420.5"
       }
+    },
+    {
+      "text": "Food? You got peckish after all this eh?\n\n[[Just hungry aint I->gameover1-hungry]]",
+      "links": [
+        {
+          "name": "Just hungry aint I",
+          "link": "gameover1-hungry",
+          "pid": "16"
+        }
+      ],
+      "name": "ash6-1",
+      "pid": "14",
+      "position": {
+        "x": "850.5",
+        "y": "427.5"
+      },
+      "tags": [
+        "imageAsh2"
+      ]
+    },
+    {
+      "text": "The driver was fined $600 and sentenced to four months community service. His license was disqualified for three years.\n\n[[Start again->intro]]",
+      "links": [
+        {
+          "name": "Start again",
+          "link": "intro",
+          "pid": "1"
+        }
+      ],
+      "name": "gameover2",
+      "pid": "15",
+      "position": {
+        "x": "1042.5",
+        "y": "650.5"
+      },
+      "tags": [
+        "imageGameover2"
+      ]
+    },
+    {
+      "text": "Ok, well I'm taking you in. No one should be that hungry after a collision.\n\n[[gameover2]]",
+      "links": [
+        {
+          "name": "gameover2",
+          "link": "gameover2",
+          "pid": "15"
+        }
+      ],
+      "name": "gameover1-hungry",
+      "pid": "16",
+      "position": {
+        "x": "1032.5",
+        "y": "447.5"
+      },
+      "tags": [
+        "imageGameover1"
+      ]
+    },
+    {
+      "text": "Is this your car?\n\n[[Yes mate, I crashed officer.->gameover1]]\n[[I'm a private investigator. I'm investigating.->win]]",
+      "links": [
+        {
+          "name": "Yes mate, I crashed officer.",
+          "link": "gameover1",
+          "pid": "18"
+        },
+        {
+          "name": "I'm a private investigator. I'm investigating.",
+          "link": "win",
+          "pid": "19"
+        }
+      ],
+      "name": "ash2-1",
+      "pid": "17",
+      "position": {
+        "x": "152.5",
+        "y": "436.5"
+      }
+    },
+    {
+      "text": "Going to have to take you in then mate.\n\n[[gameover2]]",
+      "links": [
+        {
+          "name": "gameover2",
+          "link": "gameover2",
+          "pid": "15"
+        }
+      ],
+      "name": "gameover1",
+      "pid": "18",
+      "position": {
+        "x": "857.5",
+        "y": "622.5"
+      },
+      "tags": [
+        "imageGameover1"
+      ]
+    },
+    {
+      "text": "Well I'll let you get on with it then. Sorry for the bother!\n\n[[Start again->intro]]",
+      "links": [
+        {
+          "name": "Start again",
+          "link": "intro",
+          "pid": "1"
+        }
+      ],
+      "name": "win",
+      "pid": "19",
+      "position": {
+        "x": "423.5",
+        "y": "627.5"
+      },
+      "tags": [
+        "imageWin"
+      ]
     }
   ],
   "name": "waiting for a mate",

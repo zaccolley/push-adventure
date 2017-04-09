@@ -97,19 +97,24 @@ function sendMessage(subscription) {
     return;
   }
 
-  const actions = passage.links.map((link, i) => {
-    if (link.name === link.link) {
-      return { action: link.pid, title: 'Continue' };
-    }
-    return { action: link.pid, title: `Choose: ${i+1}` };
-  });
+  let actions = '';
+  let bodActions = '';
 
-  const bodyActions = passage.links.map((link, i) => {
-    if (link.name === link.link) {
-      return '';
-    }
-    return `${i+1}: ${link.name}`;
-  });
+  if (passage.links && passage.links.length > 0) {
+    actions = passage.links.map((link, i) => {
+      if (link.name === link.link) {
+        return { action: link.pid, title: 'Continue' };
+      }
+      return { action: link.pid, title: `Choose: ${i+1}` };
+    });
+
+    bodyActions = passage.links.map((link, i) => {
+      if (link.name === link.link) {
+        return '';
+      }
+      return `${i+1}: ${link.name}`;
+    });
+  }
 
   const bodyText = passage.text.replace(/\[\[.+\]\]/g, '').trim(); // remove twine links
   const body = `${bodyText}\n\n${bodyActions.join('\n')}`.trim();
