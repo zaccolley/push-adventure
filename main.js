@@ -102,6 +102,9 @@ function sendMessage(subscription) {
 
   if (passage.links && passage.links.length > 0) {
     actions = passage.links.map((link, i) => {
+      if (link.pid === 1) {
+        return { action: link.pid, title: 'Start again' };
+      }
       if (link.name === link.link) {
         return { action: link.pid, title: 'Continue' };
       }
@@ -109,7 +112,7 @@ function sendMessage(subscription) {
     });
 
     bodyActions = passage.links.map((link, i) => {
-      if (link.name === link.link) {
+      if (link.pid === 1 || link.name === link.link) {
         return '';
       }
       return `${i+1}: ${link.name}`;
