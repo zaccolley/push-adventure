@@ -18,7 +18,7 @@ function messageValidator() {
   }
 }
 
-const messages = require('./messages');
+const passages = require('./twison.json').passages;
 
 const webPush = require('web-push');
 const express = require('express');
@@ -46,7 +46,7 @@ app.post('/subscription', jsonParser, (req, res) => {
 
   if (!userSubscription) {
     // initialise the first messages
-    subscription.currentMessage = 'intro';
+    subscription.currentMessage = '1';
 
     // add new subscription
     subscriptions[subscription.endpoint] = subscription;
@@ -91,33 +91,40 @@ app.post('/action', jsonParser, (req, res) => {
 });
 
 function sendMessage(subscription) {
-  const message = messages[subscription.currentMessage];
+  const passage = passages.find(passage => passage.pid === subscription.currentMessage);
 
-  if (!message) {
+  if (!passage) {
     return;
   }
 
-  const actions = message.actions.map(action => {
-    if (action.text === 'Continue') {
-      return { action: action.id, title: `Continue: ${action.icon}` };
+  const actions = passage.links.map((link, i) => {
+    if (link.name === link.link) {
+      return { action: link.pid, title: 'Continue' };
     }
-    return { action: action.id, title: `Choose: ${action.icon}` };
+    return { action: link.pid, title: `Choose: ${i+1}` };
   });
 
-  const bodyActions = message.actions.map(action => {
-    if (action.text === 'Continue') {
+  const bodyActions = passage.links.map((link, i) => {
+    if (link.name === link.link) {
       return '';
     }
-    return `\n\n${action.icon} ${action.text}`;
+    return `${i+1}: ${link.name}`;
   });
-  const body = `${message.body} ${bodyActions}`.trim();
+
+  const bodyText = passage.text.replace(/\[\[.+\]\]/g, '').trim(); // remove twine links
+  const body = `${bodyText}\n\n${bodyActions.join('\n')}`.trim();
+
+  let icon = '';
+  if (passage.tags && passage.tags.length > 0) {
+    icon = `images/${passage.tags[0]}.png`;
+  }
 
   const data = {
     tag: subscription.endpoint,
-    title: message.title,
+    title: '',
     body,
     actions,
-    icon: `images/${message.image}`,
+    icon,
     vibrate: [0],
     // badge: ''
   };

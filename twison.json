@@ -1,0 +1,251 @@
+{
+  "passages": [
+    {
+      "text": "It’s after 10 PM and Senior Constable Ash Bowden is on to an unusual job.\n\n[[ashintro1]]",
+      "links": [
+        {
+          "name": "ashintro1",
+          "link": "ashintro1",
+          "pid": "10"
+        }
+      ],
+      "name": "intro",
+      "pid": "1",
+      "position": {
+        "x": "163",
+        "y": "108.5"
+      },
+      "tags": [
+        "imageIntro"
+      ]
+    },
+    {
+      "text": "What happened mate?\n\n[[I’m just waiting for a mate.->ash2]]\n[[lol->ash2-1]]",
+      "links": [
+        {
+          "name": "I’m just waiting for a mate.",
+          "link": "ash2",
+          "pid": "3"
+        },
+        {
+          "name": "lol",
+          "link": "ash2-1",
+          "pid": "13"
+        }
+      ],
+      "name": "ash1",
+      "pid": "2",
+      "position": {
+        "x": "152.5",
+        "y": "286.5"
+      },
+      "tags": [
+        "imageAsh2"
+      ]
+    },
+    {
+      "text": "Is that why your cars all smashed up and you’re up on the grass at the moment or what?\n\n[[Yeah… just waiting for a mate he’s gone in… in there. Why?->ash3]]",
+      "links": [
+        {
+          "name": "Yeah… just waiting for a mate he’s gone in… in there. Why?",
+          "link": "ash3",
+          "pid": "4"
+        }
+      ],
+      "name": "ash2",
+      "pid": "3",
+      "position": {
+        "x": "332.5",
+        "y": "294.5"
+      },
+      "tags": [
+        "imageCar"
+      ]
+    },
+    {
+      "text": "I’m just wondering hh-h-how the collision with the car happened mate?\n\n[[What collision?->ash4]]",
+      "links": [
+        {
+          "name": "What collision?",
+          "link": "ash4",
+          "pid": "5"
+        }
+      ],
+      "name": "ash3",
+      "pid": "4",
+      "position": {
+        "x": "497.5",
+        "y": "276.5"
+      },
+      "tags": [
+        "imageAsh2"
+      ]
+    },
+    {
+      "text": "Well the one that’s got your, all your wheels and stuff twist up, your front bumper bars hanging off mate.\n\n[[Well... I’m just waiting for a mate, as i said.->ash5]]",
+      "links": [
+        {
+          "name": "Well... I’m just waiting for a mate, as i said.",
+          "link": "ash5",
+          "pid": "6"
+        }
+      ],
+      "name": "ash4",
+      "pid": "5",
+      "position": {
+        "x": "676.5",
+        "y": "284.5"
+      },
+      "tags": [
+        "imageAsh2"
+      ]
+    },
+    {
+      "text": "Who’s your mate?\n\n[[James, he’s in there.->ash6]]\n",
+      "links": [
+        {
+          "name": "James, he’s in there.",
+          "link": "ash6",
+          "pid": "7"
+        }
+      ],
+      "name": "ash5",
+      "pid": "6",
+      "position": {
+        "x": "850.5",
+        "y": "277.5"
+      },
+      "tags": [
+        "imageAsh2"
+      ]
+    },
+    {
+      "text": "How’d you get down here?\n\n[[Does it matter?->ash7]]",
+      "links": [
+        {
+          "name": "Does it matter?",
+          "link": "ash7",
+          "pid": "8"
+        }
+      ],
+      "name": "ash6",
+      "pid": "7",
+      "position": {
+        "x": "1040.5",
+        "y": "280.5"
+      },
+      "tags": [
+        "imageAsh2"
+      ]
+    },
+    {
+      "text": "It kinda does mate cause you’ve just been involved in an accident.\n\n[[No I havent!->ash8]]\n",
+      "links": [
+        {
+          "name": "No I havent!",
+          "link": "ash8",
+          "pid": "9"
+        }
+      ],
+      "name": "ash7",
+      "pid": "8",
+      "position": {
+        "x": "1216.5",
+        "y": "283.5"
+      },
+      "tags": [
+        "imageAsh2"
+      ]
+    },
+    {
+      "text": "Double-click this passage to edit it.",
+      "name": "ash8",
+      "pid": "9",
+      "position": {
+        "x": "178.5",
+        "y": "606.5"
+      },
+      "tags": [
+        "imageAsh2"
+      ]
+    },
+    {
+      "text": "Just up in Carrum Downs we’re looking for a car that was doing burnouts and then another calls come through saying that ummm ...\n\n[[ashintro2]]",
+      "links": [
+        {
+          "name": "ashintro2",
+          "link": "ashintro2",
+          "pid": "12"
+        }
+      ],
+      "name": "ashintro1",
+      "pid": "10",
+      "position": {
+        "x": "363",
+        "y": "112.5"
+      },
+      "tags": [
+        "imageAsh1"
+      ]
+    },
+    {
+      "text": "Witness to the incident have given the location of this shopping mall car park. Ash soon spots what he’s looking for.\n\n[[ash1]]",
+      "links": [
+        {
+          "name": "ash1",
+          "link": "ash1",
+          "pid": "2"
+        }
+      ],
+      "name": "intro2",
+      "pid": "11",
+      "position": {
+        "x": "748",
+        "y": "112.5"
+      },
+      "tags": [
+        "imageMall"
+      ]
+    },
+    {
+      "text": "... a similar looking car or very similar description has crashed. So we’re just trying to get to it as quick as we can to see what the hell is going on.\n\n[[intro2]]",
+      "links": [
+        {
+          "name": "intro2",
+          "link": "intro2",
+          "pid": "11"
+        }
+      ],
+      "name": "ashintro2",
+      "pid": "12",
+      "position": {
+        "x": "550.5",
+        "y": "108.5"
+      },
+      "tags": [
+        "imageAsh1"
+      ]
+    },
+    {
+      "text": "cool\n\n[[waht->ash3]]",
+      "links": [
+        {
+          "name": "waht",
+          "link": "ash3",
+          "pid": "4"
+        }
+      ],
+      "name": "ash2-1",
+      "pid": "13",
+      "position": {
+        "x": "335.5",
+        "y": "416.5"
+      }
+    }
+  ],
+  "name": "waiting for a mate",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.1.0",
+  "ifid": "75CB3CD3-E6CD-4DAE-9B17-2D5CDABFFCEC"
+}
