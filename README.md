@@ -1,4 +1,4 @@
-# twine-notifications
+# push-notification-twine
 
 use push notifications to play a (basic) twine story
 
