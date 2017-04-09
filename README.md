@@ -23,8 +23,14 @@ node main.js
 
 this project uses [twine](https://twinery.org/), something that makes creating a story people easy. it uses the [twison json format exporter](https://github.com/lazerwalker/twison)
 
+you can see the current twison data in the `twison.json` file
+
 ## example
 
 you can find an example over at: https://push-notification-twine.glitch.me/
 
 it's based on the famous "im just waiting for a mate" video: https://www.youtube.com/watch?v=71DIT6hYXYo
+
+you can remix this using glitch
+
+[![Remix on Glitch](https://cdn.gomix.com/f3620a78-0ad3-4f81-a271-c8a4faa20f86%2Fremix-button.svg)](https://glitch.com/edit/#!/remix/push-notification-twine)
