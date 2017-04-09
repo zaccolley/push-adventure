@@ -267,7 +267,10 @@
       "position": {
         "x": "417.5",
         "y": "420.5"
-      }
+      },
+      "tags": [
+        "imageAsh2"
+      ]
     },
     {
       "text": "Food? You got peckish after all this eh?\n\n[[Just hungry aint I->gameover1-hungry]]",
@@ -345,7 +348,10 @@
       "position": {
         "x": "152.5",
         "y": "436.5"
-      }
+      },
+      "tags": [
+        "imageAsh2"
+      ]
     },
     {
       "text": "Going to have to take you in then mate.\n\n[[gameover2]]",
